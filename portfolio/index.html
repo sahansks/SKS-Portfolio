@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sahan Subasinghe - Cyber Security Undergraduate & Cloud Security Specialist. Experience in Azure, Kali Linux, Python, and Network Security.">
+  <meta name="keywords" content="Sahan Subasinghe, Cyber Security, Cloud Security, Microsoft Azure, Kali Linux, Python, Network Security, Edith Cowan University">
+  <meta name="author" content="Sahan Subasinghe">
+  <meta property="og:title" content="Sahan Subasinghe | Cyber Security Specialist & Cloud Security Analyst">
+  <meta property="og:description" content="Explore cybersecurity projects, cloud defense labs, technical skills, and leadership experience of Sahan Subasinghe.">
+  <meta property="og:type" content="website">
+  <title>Sahan Subasinghe | Cyber Security Specialist & Cloud Security Undergraduate</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Cyber Canvas & Background Overlays -->
+  <canvas id="cyber-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="nav-brand">
+        <div class="logo-shield">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <span>SAHAN<span class="text-gradient">.SEC</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects & Labs</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#terminal-section" class="nav-link">Terminal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" title="Toggle Theme (Cyber / Matrix)" aria-label="Toggle Theme">
+          <i class="fa-solid fa-terminal"></i>
+        </button>
+        <button class="icon-btn" id="audio-toggle" title="Toggle Sound FX" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-high" id="audio-icon"></i>
+        </button>
+        <a href="assets/sahan_subasinghe_resume.pdf" download="Sahan_Subasinghe_Resume.pdf" class="btn btn-primary btn-sm" id="nav-resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+        <button class="icon-btn mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for Internship & Junior Security Roles</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Sahan Subasinghe</span>
+          </h1>
+          <div class="hero-designation">
+            <i class="fa-solid fa-code-commit"></i> Cyber Security Student & Cloud Security Analyst
+          </div>
+          <p class="hero-bio">
+            Motivated Cyber Security undergraduate at <strong>Edith Cowan University</strong> with hands-on experience in <strong>Microsoft Azure</strong>, <strong>Python</strong>, and <strong>Kali Linux</strong>. Bridging high-stakes operational leadership with offensive & defensive security engineering.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary btn-lg" id="hero-projects-btn">
+              <i class="fa-solid fa-shield-virus"></i> Explore Projects
+            </a>
+            <a href="assets/sahan_subasinghe_resume.pdf" download="Sahan_Subasinghe_Resume.pdf" class="btn btn-outline btn-lg" id="hero-resume-btn">
+              <i class="fa-solid fa-download"></i> Download CV (PDF)
+            </a>
+            <a href="#terminal-section" class="btn btn-outline btn-lg font-mono" id="hero-term-btn">
+              <i class="fa-solid fa-terminal"></i> Launch CLI
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years IT & Cyber Specialization</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Core Security & Cloud Tools</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Years Management & Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-frame">
+              <img src="assets/avatar.jpg" alt="Sahan Subasinghe Cyber Specialist" class="avatar-img" id="hero-avatar">
+            </div>
+            <div class="floating-tag">
+              <i class="fa-solid fa-lock"></i> Zero Trust & Cloud SOC
+            </div>
+            <div class="avatar-badge-float">
+              <div class="badge-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <div class="badge-text">ECU Cyber Security</div>
+                <div class="badge-sub">Azure | Kali | Python</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE CYBER TERMINAL SECTION
+         ========================================================================== -->
+    <section class="section" id="terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-terminal"></i> Interactive Shell</div>
+          <h2 class="section-title">Security Operations Console</h2>
+          <p class="section-subtitle">Interact with Sahan's profile directly via command line interface.</p>
+        </div>
+
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">sahan@sec-station: ~ (zsh / bash)</div>
+            <div class="terminal-actions">
+              <button class="term-btn" id="term-clear-btn" title="Clear screen"><i class="fa-solid fa-eraser"></i> Clear</button>
+              <button class="term-btn" id="term-matrix-btn" title="Toggle Matrix Mode"><i class="fa-solid fa-code"></i> Matrix</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output">
+            <div class="term-line">
+              <span class="term-prompt">sahan@sec-station:~$</span> <span class="term-cmd">system-init --banner</span>
+            </div>
+            <div class="term-output">
+              ============================================================<br>
+              ⚡ <strong>SAHAN SUBASINGHE</strong> - CYBER SECURITY PROFILE CLI v2.6<br>
+              🎓 Edith Cowan University | Deakin College Alum<br>
+              🛡️ Specialization: Azure Cloud, Kali Linux, Python Security Automation<br>
+              ============================================================<br>
+              Type <span class="text-gradient">help</span> to view available security commands.
+            </div>
+          </div>
+
+          <div class="terminal-quick-bar">
+            <span style="color: var(--text-muted);">Quick Commands:</span>
+            <span class="quick-tag" data-cmd="help">help</span>
+            <span class="quick-tag" data-cmd="whoami">whoami</span>
+            <span class="quick-tag" data-cmd="skills">skills</span>
+            <span class="quick-tag" data-cmd="projects">projects</span>
+            <span class="quick-tag" data-cmd="experience">experience</span>
+            <span class="quick-tag" data-cmd="education">education</span>
+            <span class="quick-tag" data-cmd="scan">scan</span>
+            <span class="quick-tag" data-cmd="download">download</span>
+            <span class="quick-tag" data-cmd="contact">contact</span>
+          </div>
+
+          <div class="terminal-input-row" style="padding: 0.8rem 1.2rem; background: #05080f; border-top: 1px solid rgba(255,255,255,0.05);">
+            <span class="term-prompt font-mono">sahan@sec-station:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (e.g. help, skills, scan)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-user-shield"></i> Profile & Vision</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Passionate about securing modern cloud infrastructures and networks against emerging threats.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 style="margin-bottom: 1rem; color: var(--cyan-primary);">
+              <i class="fa-solid fa-microchip"></i> Engineering Defenses & Leading Under Pressure
+            </h3>
+            <p class="about-p">
+              I am an energetic Cyber Security undergraduate currently pursuing my Bachelor’s degree at <strong>Edith Cowan University</strong>, built on a strong technical foundation with a <strong>Diploma of Information Technology from Deakin College (Melbourne, Australia)</strong>.
+            </p>
+            <p class="about-p">
+              My technical focus centers on <strong>Microsoft Azure Cloud Security</strong>, offensive auditing and threat hunting in <strong>Kali Linux</strong>, network traffic analysis with <strong>TCP/IP protocols</strong>, and Python automation for security auditing.
+            </p>
+            <p class="about-p">
+              Beyond pure technical execution, I bring over <strong>5 years of frontline leadership and operational management</strong> from Australia—overseeing team operations, strict client data confidentiality, and rapid crisis management in high-pressure environments.
+            </p>
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+              <div class="skill-tag" style="background: rgba(0, 242, 254, 0.1); color: var(--cyan-primary);">
+                <i class="fa-solid fa-location-dot"></i> Kirillawela, Kadawatha, Sri Lanka
+              </div>
+              <div class="skill-tag" style="background: rgba(0, 255, 157, 0.1); color: var(--emerald-neon);">
+                <i class="fa-solid fa-language"></i> English (Fluent) & Sinhalese (Native)
+              </div>
+            </div>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-brands fa-microsoft"></i></div>
+              <h4 class="pillar-title">Cloud & Azure Security</h4>
+              <p class="pillar-desc">Cloud architecture hardening, Entra ID (Azure AD), Role-Based Access Controls (RBAC), and Sentinel SIEM integration.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-bug-slash"></i></div>
+              <h4 class="pillar-title">Offensive & Defensive Labs</h4>
+              <p class="pillar-desc">Vulnerability assessment, Kali Linux penetration tooling, threat modeling, and defensive security posture management.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <h4 class="pillar-title">Network Architecture & Analysis</h4>
+              <p class="pillar-desc">Deep packet inspection, TCP/IP fundamentals, network monitoring, troubleshooting, and anomaly detection.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <h4 class="pillar-title">Operational Leadership</h4>
+              <p class="pillar-desc">Proven managerial experience, client confidentiality compliance, team mentoring, and decision making in critical moments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS MATRIX SECTION
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-layer-group"></i> Core Competencies</div>
+          <h2 class="section-title">Technical Skills & Tooling</h2>
+          <p class="section-subtitle">Verified technical proficiencies across cloud infrastructure, security tooling, and operational leadership.</p>
+        </div>
+
+        <div class="skills-controls">
+          <div class="skill-tabs">
+            <button class="skill-tab-btn active" data-category="all">All Skills</button>
+            <button class="skill-tab-btn" data-category="cloud">Cloud & Infrastructure</button>
+            <button class="skill-tab-btn" data-category="security">Cyber & Defense</button>
+            <button class="skill-tab-btn" data-category="networking">Networking & Systems</button>
+            <button class="skill-tab-btn" data-category="programming">Programming</button>
+            <button class="skill-tab-btn" data-category="leadership">Leadership & Ops</button>
+          </div>
+
+          <div class="skills-search-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="skills-search" class="skills-search-input" placeholder="Filter skills (e.g. Azure, Python)...">
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill: Microsoft Azure -->
+          <div class="skill-card" data-category="cloud" data-name="Microsoft Azure">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-brands fa-microsoft skill-icon-badge"></i>
+                <div class="skill-name">Microsoft Azure</div>
+              </div>
+              <span class="skill-level-text">Proficient</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Azure Portal</span>
+              <span class="skill-tag">Entra ID / IAM</span>
+              <span class="skill-tag">Sentinel SIEM</span>
+              <span class="skill-tag">Cloud VMs</span>
+            </div>
+          </div>
+
+          <!-- Skill: Python Programming -->
+          <div class="skill-card" data-category="programming" data-name="Python Programming">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-brands fa-python skill-icon-badge" style="color: #38bdf8;"></i>
+                <div class="skill-name">Python Programming</div>
+              </div>
+              <span class="skill-level-text">Proficient</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 80%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Socket Programming</span>
+              <span class="skill-tag">Automation</span>
+              <span class="skill-tag">Port Scanners</span>
+              <span class="skill-tag">Scripting</span>
+            </div>
+          </div>
+
+          <!-- Skill: Kali Linux -->
+          <div class="skill-card" data-category="security" data-name="Kali Linux">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-brands fa-linux skill-icon-badge" style="color: #00ff9d;"></i>
+                <div class="skill-name">Kali Linux</div>
+              </div>
+              <span class="skill-level-text">Advanced Lab</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Nmap</span>
+              <span class="skill-tag">Metasploit</span>
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">Burp Suite</span>
+            </div>
+          </div>
+
+          <!-- Skill: Linux Administration -->
+          <div class="skill-card" data-category="networking" data-name="Linux Administration">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-solid fa-server skill-icon-badge"></i>
+                <div class="skill-name">Linux Administration</div>
+              </div>
+              <span class="skill-level-text">Proficient</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 82%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Bash Shell</span>
+              <span class="skill-tag">Permissions & ACLs</span>
+              <span class="skill-tag">SSH & Hardening</span>
+              <span class="skill-tag">Process Mgmt</span>
+            </div>
+          </div>
+
+          <!-- Skill: Vulnerability Assessment -->
+          <div class="skill-card" data-category="security" data-name="Vulnerability Assessment">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-solid fa-magnifying-glass-chart skill-icon-badge" style="color: #a855f7;"></i>
+                <div class="skill-name">Vulnerability Assessment</div>
+              </div>
+              <span class="skill-level-text">Practical</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">CVE Auditing</span>
+              <span class="skill-tag">Risk Assessment</span>
+              <span class="skill-tag">OWASP Top 10</span>
+              <span class="skill-tag">Remediation</span>
+            </div>
+          </div>
+
+          <!-- Skill: Network Monitoring & Troubleshooting -->
+          <div class="skill-card" data-category="networking" data-name="Network Monitoring Troubleshooting">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-solid fa-chart-line skill-icon-badge" style="color: #f59e0b;"></i>
+                <div class="skill-name">Network Monitoring</div>
+              </div>
+              <span class="skill-level-text">Strong</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Packet Capture</span>
+              <span class="skill-tag">Bandwidth Analysis</span>
+              <span class="skill-tag">Latency Diagnostics</span>
+              <span class="skill-tag">Topology</span>
+            </div>
+          </div>
+
+          <!-- Skill: TCP/IP & Network Fundamentals -->
+          <div class="skill-card" data-category="networking" data-name="TCP/IP Network Fundamentals">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-solid fa-network-wired skill-icon-badge"></i>
+                <div class="skill-name">TCP/IP Fundamentals</div>
+              </div>
+              <span class="skill-level-text">Core Mastery</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">OSI Model</span>
+              <span class="skill-tag">Subnetting / CIDR</span>
+              <span class="skill-tag">DNS & DHCP</span>
+              <span class="skill-tag">Firewalls & NAT</span>
+            </div>
+          </div>
+
+          <!-- Skill: Security Awareness & Risk Assessment -->
+          <div class="skill-card" data-category="security" data-name="Security Awareness Risk Assessment">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-solid fa-shield-virus skill-icon-badge" style="color: #00f2fe;"></i>
+                <div class="skill-name">Security & Risk Mgmt</div>
+              </div>
+              <span class="skill-level-text">Applied</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Threat Mitigation</span>
+              <span class="skill-tag">Data Protection</span>
+              <span class="skill-tag">Phishing Defense</span>
+              <span class="skill-tag">Compliance</span>
+            </div>
+          </div>
+
+          <!-- Skill: Leadership & Team Management -->
+          <div class="skill-card" data-category="leadership" data-name="Leadership Team Management">
+            <div class="skill-header">
+              <div class="skill-name-wrap">
+                <i class="fa-solid fa-people-group skill-icon-badge" style="color: #10b981;"></i>
+                <div class="skill-name">Leadership & Team Mgmt</div>
+              </div>
+              <span class="skill-level-text">5+ Years Experience</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Staff Supervision</span>
+              <span class="skill-tag">Crisis Mitigation</span>
+              <span class="skill-tag">Mentoring & Training</span>
+              <span class="skill-tag">Decision Making</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS & LABS SECTION
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-vial-circle-check"></i> Practical Experience</div>
+          <h2 class="section-title">Featured Projects & Cyber Labs</h2>
+          <p class="section-subtitle">Hands-on implementations in cloud security, automated reconnaissance, and enterprise defense.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/azure_lab.jpg" alt="Azure Cloud Threat Lab" class="project-img">
+              <span class="project-badge-overlay"><i class="fa-brands fa-microsoft"></i> Cloud SOC Lab</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Azure Cloud SOC & Sentinel Threat Monitoring</h3>
+              <p class="project-desc">
+                Architected an Azure-based Security Operations Center (SOC) sandbox utilizing Log Analytics Workspace and Microsoft Sentinel. Deployed an intentionally exposed Windows VM honeypot to capture and geo-map live global RDP brute-force attacks in real time.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Microsoft Azure</span>
+                <span class="tech-pill">Microsoft Sentinel</span>
+                <span class="tech-pill">Log Analytics (KQL)</span>
+                <span class="tech-pill">Honeypot VM</span>
+                <span class="tech-pill">Threat Mapping</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="azure">
+                  <i class="fa-solid fa-circle-info"></i> Architecture Deep Dive
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/kali_lab.jpg" alt="Automated Python Network Scanner" class="project-img">
+              <span class="project-badge-overlay"><i class="fa-brands fa-python"></i> Python & Kali</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Automated Python Network & Vulnerability Scanner</h3>
+              <p class="project-desc">
+                Developed an asynchronous multi-threaded TCP/UDP port scanner and service banner grabber in Python. Integrated automated CVE lookup against open service versions and generated structured security vulnerability audit reports.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python 3</span>
+                <span class="tech-pill">Sockets & Threading</span>
+                <span class="tech-pill">Kali Linux</span>
+                <span class="tech-pill">CVE Auditing</span>
+                <span class="tech-pill">Banner Grabbing</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="scanner">
+                  <i class="fa-solid fa-circle-info"></i> View Code & Flow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/kali_lab.jpg" alt="Packet Analysis & MITM Detection" class="project-img" style="filter: hue-rotate(90deg);">
+              <span class="project-badge-overlay"><i class="fa-solid fa-network-wired"></i> Packet Forensics</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Deep Packet Forensics & MITM Threat Analysis</h3>
+              <p class="project-desc">
+                Conducted deep packet inspection using Wireshark and Kali Linux to detect and analyze simulated Man-in-the-Middle (ARP Poisoning, DNS Spoofing) attacks within an isolated virtual LAN topology. Configured firewall inspection rules to mitigate unauthorized broadcast anomalies.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Wireshark</span>
+                <span class="tech-pill">TCP/IP Protocols</span>
+                <span class="tech-pill">ARP / DNS Forensics</span>
+                <span class="tech-pill">Kali Linux</span>
+                <span class="tech-pill">Traffic Analysis</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="packet">
+                  <i class="fa-solid fa-circle-info"></i> Inspection Breakdown
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="assets/azure_lab.jpg" alt="Zero Trust Identity Blueprint" class="project-img" style="filter: hue-rotate(240deg);">
+              <span class="project-badge-overlay"><i class="fa-solid fa-key"></i> IAM & Zero Trust</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Enterprise Zero Trust & Active Directory IAM Blueprint</h3>
+              <p class="project-desc">
+                Designed a secure Identity and Access Management (IAM) framework using Microsoft Entra ID (Azure AD). Implemented Role-Based Access Control (RBAC), Conditional Access policies, Multi-Factor Authentication (MFA), and Principle of Least Privilege enforcement.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Azure AD / Entra ID</span>
+                <span class="tech-pill">RBAC Policy</span>
+                <span class="tech-pill">Conditional Access</span>
+                <span class="tech-pill">MFA Enforcement</span>
+                <span class="tech-pill">Zero Trust</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="iam">
+                  <i class="fa-solid fa-circle-info"></i> Blueprint Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & LEADERSHIP TIMELINE
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-briefcase"></i> Track Record</div>
+          <h2 class="section-title">Work Experience & Leadership</h2>
+          <p class="section-subtitle">Real-world operational management, customer data confidentiality, and team coordination in Australia.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Motel Manager -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Motel Manager</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-building"></i> Ringwood Motel | Ringwood, Australia</div>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 - 2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Managed daily motel operations, ensuring seamless business continuity and top-tier guest satisfaction.</li>
+                <li>Supervised and coordinated staff rosters, departmental responsibilities, and operational safety workflows.</li>
+                <li>Handled confidential reservations, automated payment transactions, and sensitive administrative records with rigorous data integrity.</li>
+                <li>Maintained strict compliance with guest information privacy standards and secured internal digital record repositories.</li>
+                <li>Resolved critical guest inquiries and operational bottlenecks swiftly in a high-turnaround hospitality setting.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: Maccas Shift Manager -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Crew Trainer & Shift Manager</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-utensils"></i> Maccas (McDonald's) | Cheltenham, Australia</div>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2019 - 2023</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Supervised high-volume fast-paced shifts, leading cross-functional teams of 15+ crew members to exceed operational benchmarks.</li>
+                <li>Trained and mentored new crew members on security compliance, emergency protocols, and high-standard customer service.</li>
+                <li>Managed daily financial auditing, cash registers, safe accounting, and supply inventory tracking with zero discrepancies.</li>
+                <li>De-escalated and resolved high-friction customer disputes with poise, demonstrating decisive leadership under pressure.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & REFERENCES SECTION
+         ========================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Academics & Endorsements</div>
+          <h2 class="section-title">Education & Professional References</h2>
+          <p class="section-subtitle">Academic degrees, international qualifications, and verified leadership references.</p>
+        </div>
+
+        <div class="edu-ref-grid">
+          <!-- Education Column -->
+          <div class="edu-col">
+            <h3 style="margin-bottom: 1.5rem; color: var(--cyan-primary);"><i class="fa-solid fa-book-open-reader"></i> Academic Credentials</h3>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">Bachelor of Cyber Security</h4>
+              <div class="edu-school">Edith Cowan University, Sri Lanka</div>
+              <div class="edu-period"><i class="fa-regular fa-clock"></i> 2026 - 2027</div>
+              <p style="font-size: 0.88rem; margin-top: 0.5rem; color: var(--text-secondary);">
+                Focus on Cloud Security, Threat Analysis, Penetration Testing, Risk Mitigation, and Network Defense Architecture.
+              </p>
+            </div>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">Diploma of Information Technology</h4>
+              <div class="edu-school">Deakin College, Burwood, Australia</div>
+              <div class="edu-period"><i class="fa-regular fa-clock"></i> 2019 - 2021</div>
+              <p style="font-size: 0.88rem; margin-top: 0.5rem; color: var(--text-secondary);">
+                Core computing curriculum including Programming, Systems Design, Network Fundamentals, and Database Architecture.
+              </p>
+            </div>
+
+            <div class="edu-card">
+              <h4 class="edu-degree">Ordinary & Advanced Level Examinations</h4>
+              <div class="edu-school">Lyceum International School, Sri Lanka</div>
+              <div class="edu-period"><i class="fa-regular fa-clock"></i> 2006 - 2018</div>
+              <p style="font-size: 0.88rem; margin-top: 0.5rem; color: var(--text-secondary);">
+                <strong>O/L:</strong> Maths, Physics, Chemistry, Computer Science, Biology, English, English Literature.<br>
+                <strong>A/L:</strong> Maths, Physics, Chemistry.
+              </p>
+            </div>
+          </div>
+
+          <!-- References Column -->
+          <div class="ref-col">
+            <h3 style="margin-bottom: 1.5rem; color: var(--emerald-neon);"><i class="fa-solid fa-stamp"></i> Professional References</h3>
+
+            <div class="reference-card">
+              <h4 class="ref-name">Montek Singh</h4>
+              <div class="ref-role">Owner — Ringwood Motel (Australia)</div>
+              <div class="ref-contact-row">
+                <span><i class="fa-solid fa-phone"></i> +61 424 409 052</span>
+                <button class="copy-mini-btn copy-btn" data-copy="+61424409052" title="Copy Phone Number">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="reference-card">
+              <h4 class="ref-name">Gihan</h4>
+              <div class="ref-role">Hiring Manager — Maccas (Australia)</div>
+              <div class="ref-contact-row">
+                <span><i class="fa-solid fa-phone"></i> +61 450 959 814</span>
+                <button class="copy-mini-btn copy-btn" data-copy="+61450959814" title="Copy Phone Number">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="about-card" style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(0, 242, 254, 0.05); border: 1px dashed var(--border-active);">
+              <h4 style="font-size: 1rem; color: var(--cyan-primary); margin-bottom: 0.4rem;">
+                <i class="fa-solid fa-file-pdf"></i> Verified Resume PDF
+              </h4>
+              <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+                Download the official 2026 CV formatted for hiring managers and recruiters.
+              </p>
+              <a href="assets/sahan_subasinghe_resume.pdf" download="Sahan_Subasinghe_Resume.pdf" class="btn btn-primary btn-sm" style="width: 100%;">
+                <i class="fa-solid fa-download"></i> Download Full Resume (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-envelope"></i> Get in Touch</div>
+          <h2 class="section-title">Contact & Connect</h2>
+          <p class="section-subtitle">Reach out for cybersecurity internships, entry-level opportunities, or technical collaboration.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left: Contact Details -->
+          <div>
+            <h3 style="margin-bottom: 0.8rem; color: var(--cyan-primary);">Let's Build Secure Systems</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Whether you are looking for a dedicated Cyber Security Intern, a Cloud Defense Analyst, or want to discuss security engineering, feel free to contact me directly.
+            </p>
+
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div style="flex: 1;">
+                  <div class="contact-item-title">Direct Email</div>
+                  <div class="contact-item-val">sahankurulu.s@gmail.com</div>
+                </div>
+                <button class="copy-mini-btn copy-btn" data-copy="sahankurulu.s@gmail.com" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </li>
+
+              <li class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div style="flex: 1;">
+                  <div class="contact-item-title">Phone Number</div>
+                  <div class="contact-item-val">+94 71 095 2075</div>
+                </div>
+                <button class="copy-mini-btn copy-btn" data-copy="+94710952075" title="Copy Phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </li>
+
+              <li class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="contact-item-title">Location</div>
+                  <div class="contact-item-val">410 Suhada Mawatha, Kirillawela, Kadawatha, Sri Lanka</div>
+                </div>
+              </li>
+            </ul>
+
+            <div style="display: flex; gap: 0.8rem; margin-top: 2rem;">
+              <a href="mailto:sahankurulu.s@gmail.com" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-paper-plane"></i> Send Direct Email
+              </a>
+              <a href="tel:+94710952075" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-phone-volume"></i> Call Direct
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name / Organization</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex (Security Recruiter)" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email Address</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-control" placeholder="Cybersecurity Internship / Project Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-control" placeholder="Hi Sahan, we are interested in discussing an opportunity with our security team..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn">
+                <i class="fa-solid fa-shield-check"></i> Send Encrypted Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL DIALOGS (PROJECT DEEP DIVE & RESUME)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title" style="color: var(--cyan-primary);">Project Details</h3>
+        <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="margin-bottom: 0.8rem;">
+        <span class="text-gradient" style="font-weight: 800; font-size: 1.1rem;">SAHAN SUBASINGHE</span>
+      </div>
+      <p>© 2026 Sahan Subasinghe. Built with cyber security precision, clean architecture, and high performance.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
