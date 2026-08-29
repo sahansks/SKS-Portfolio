@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Access Denied | Sahan Subasinghe Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#070a11">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .error-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 10;
+    }
+    .error-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      background: rgba(244, 63, 94, 0.15);
+      border: 1px solid rgba(244, 63, 94, 0.4);
+      color: #f43f5e;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .error-code {
+      font-size: clamp(4rem, 12vw, 8rem);
+      font-family: var(--font-mono);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, #f43f5e 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 40px rgba(244, 63, 94, 0.3);
+    }
+    .error-title {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      margin-bottom: 1rem;
+      color: var(--text-main);
+    }
+    .error-desc {
+      max-width: 550px;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+    .error-terminal {
+      background: var(--bg-terminal);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--border-radius-md);
+      padding: 1.2rem 1.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: var(--cyan-primary);
+      text-align: left;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: var(--shadow-card);
+    }
+    .error-terminal .prompt {
+      color: #f43f5e;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Dynamic Cyber Canvas & Background Overlays -->
+  <canvas id="cyber-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <div class="error-container">
+    <div class="error-badge">
+      <i class="fa-solid fa-triangle-exclamation"></i> Threat Level: 404 // Target Not Found
+    </div>
+    
+    <div class="error-code">404</div>
+    
+    <h1 class="error-title">Destination Route Compromised</h1>
+    
+    <p class="error-desc">
+      The node or asset you requested has been moved, removed, or never existed in this security perimeter.
+    </p>
+
+    <div class="error-terminal">
+      <div><span class="prompt">$</span> route_tracer --check</div>
+      <div style="color: var(--text-muted);">[!] Resolving requested URI...</div>
+      <div style="color: #f43f5e;">[-] ERROR: ERR_SECURITY_TARGET_NOT_FOUND (0x404)</div>
+      <div style="color: var(--emerald-neon);">[+] Suggested action: Fallback to base command node</div>
+    </div>
+
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-house-chimney"></i> Return to Headquarters
+      </a>
+      <a href="index.html#terminal-section" class="btn btn-outline btn-lg font-mono">
+        <i class="fa-solid fa-terminal"></i> Open Terminal
+      </a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
